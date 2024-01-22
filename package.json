@@ -1,0 +1,14 @@
+{
+  "name": "hospital-website",
+  "version": "1.0.0",
+  "description": "Hospital Website Using HTML, CSS, Javascript, and Tailwind",
+  "main": "main.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/css/style.css --watch"
+  },
+  "author": "Fransiskus Dave",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
