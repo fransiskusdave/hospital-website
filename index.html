@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reivers</title>
+    <title>Insove</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="dist/css/style.css" />
@@ -26,6 +26,188 @@
     <link rel="stylesheet" href="dist/css/swiper-bundle.min.css" />
   </head>
   <body>
+    <!-- Header Section Start -->
+    <header class="py-8 lg:pt-6 lg:pb-14">
+      <div
+        class="container mx-auto flex flex-col gap-y-4 lg:flex-row lg:justify-between lg:relative lg:gap-y-0"
+      >
+        <div class="flex justify-center lg:justify-normal">
+          <a href="#">
+            <img src="assets/img/header/logo.svg" alt="Logo" />
+          </a>
+        </div>
+
+        <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-0">
+          <div
+            class="flex justify-center items-center gap-x-2 lg:justify-normal"
+          >
+            <i class="ri-map-pin-fill text-2xl text-accent"></i>
+            <p class="text-secondary">Pontianak</p>
+          </div>
+
+          <div
+            class="flex justify-center items-center gap-x-2 lg:justify-normal"
+          >
+            <i class="ri-phone-fill text-2xl text-accent"></i>
+            <p class="text-secondary">(+62) 81122334455</p>
+          </div>
+
+          <button
+            class="btn btn-sm btn-outline w-[240px] lg:w-auto mx-auto lg:mx-0"
+          >
+            Book Now
+          </button>
+
+          <!-- Navbar Mobile Start -->
+          <nav
+            class="bg-white fixed w-[300px] top-0 h-5/6 -left-[300px] shadow-xl lg:hidden transition-all duration-300 z-20"
+            id="navbar"
+          >
+            <div
+              class="bg-primary w-8 h-8 relative -right-full top-8 flex justify-center items-center rounded-tr-lg rounded-br-lg cursor-pointer transition-all"
+              id="nav-close-btn"
+            >
+              <i
+                class="ri-menu-4-line text-2xl text-white"
+                id="nav-close-btn-icon"
+              ></i>
+            </div>
+
+            <div class="px-12 flex flex-col gap-y-9 h-full">
+              <a href="#">
+                <img src="assets/img/header/logo.svg" alt="" />
+              </a>
+
+              <ul class="flex flex-col gap-y-4">
+                <li>
+                  <a
+                    href="#home"
+                    class="text-secondary hover:text-accent transition-all duration-300"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#doctors"
+                    class="text-secondary hover:text-accent transition-all duration-300"
+                    >Doctors</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#Departments"
+                    class="text-secondary hover:text-accent transition-all duration-300"
+                    >Departments</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#services"
+                    class="text-secondary hover:text-accent transition-all duration-300"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#blog"
+                    class="text-secondary hover:text-accent transition-all duration-300"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="text-secondary hover:text-accent transition-all duration-300"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+
+              <form action="" class="relative flex gap-x-[10px]">
+                <label for="nav-search-input">
+                  <i class="ri-search-line text-2xl text-accent"></i>
+                </label>
+                <input
+                  type="text"
+                  id="nav-search-input"
+                  placeholder="Search..."
+                  class="outline-none w-[160px] border-b-2 focus:border-accent placeholder:italic"
+                />
+              </form>
+            </div>
+          </nav>
+          <!-- Navbar Mobile End-->
+
+          <!-- Navbar Desktop Start -->
+          <nav
+            class="bg-white absolute w-full left-0 -bottom-[86px] shadow-custom1 h-16 rounded-[10px] hidden lg:flex lg:items-center lg:justify-between lg:px-[35px]"
+          >
+            <ul class="flex gap-x-4">
+              <li>
+                <a
+                  href="#home"
+                  class="text-secondary border-r pr-4 hover:text-accent transition-all duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#doctors"
+                  class="text-secondary border-r pr-4 hover:text-accent transition-all duration-300"
+                  >Doctors</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#Departments"
+                  class="text-secondary border-r pr-4 hover:text-accent transition-all duration-300"
+                  >Departments</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-secondary border-r pr-4 hover:text-accent transition-all duration-300"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#blog"
+                  class="text-secondary border-r pr-4 hover:text-accent transition-all duration-300"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-secondary hover:text-accent transition-all duration-300"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+
+            <form action="" class="relative flex gap-x-[10px]">
+              <label
+                for="search-input"
+                class="flex justify-center items-center group"
+              >
+                <i class="ri-search-line text-2xl text-accent"></i>
+              </label>
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Search..."
+                class="outline-none w-[100px] focus:w-[150px] focus:border-b-2 focus:border-accent placeholder:italic placeholder:text-base transition-all duration-150"
+              />
+            </form>
+          </nav>
+          <!-- Navbar Desktop End -->
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+
     <!-- Swipper -->
     <script src="dist/js/swiper-bundle.min.js"></script>
 
