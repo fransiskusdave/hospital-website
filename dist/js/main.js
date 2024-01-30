@@ -21,3 +21,13 @@ navCloseBtn.addEventListener("click", () => {
     navCloseBtnIcon.classList.add(menuClass);
   }
 });
+
+// Swipper
+const swiper = new Swiper(".swiper", {
+  loop: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
