@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -81,7 +81,7 @@
               <ul class="flex flex-col gap-y-4">
                 <li>
                   <a
-                    href="#home"
+                    href="#"
                     class="text-secondary hover:text-accent transition-all duration-300"
                     >Home</a
                   >
@@ -95,7 +95,7 @@
                 </li>
                 <li>
                   <a
-                    href="#Departments"
+                    href="#departments"
                     class="text-secondary hover:text-accent transition-all duration-300"
                     >Departments</a
                   >
@@ -145,7 +145,7 @@
             <ul class="flex gap-x-4">
               <li>
                 <a
-                  href="#home"
+                  href="#"
                   class="text-secondary border-r pr-4 hover:text-accent transition-all duration-300"
                   >Home</a
                 >
@@ -159,7 +159,7 @@
               </li>
               <li>
                 <a
-                  href="#Departments"
+                  href="#departments"
                   class="text-secondary border-r pr-4 hover:text-accent transition-all duration-300"
                   >Departments</a
                 >
@@ -295,15 +295,15 @@
     <!-- Statistics Section End -->
 
     <!-- Services Section Start -->
-    <section class="services">
+    <section class="services" id="services">
       <div
-        class="bg-services bg-cover bg-no-repeat max-w-[1466px] mx-4 xl:mx-auto rounded-[20px] xl:pt-[70px] px-6 xl:px-0 relative h-[368px] flex items-center xl:items-start -z-10"
+        class="bg-services bg-cover bg-no-repeat lg:max-w-[1150px] xl:max-w-[1466px] mx-4 lg:mx-auto rounded-[20px] xl:pt-[70px] px-6 xl:px-0 relative h-[368px] flex items-center xl:items-start -z-10"
       >
         <div class="container mx-auto">
           <div
             class="services__top flex items-center flex-col xl:flex-row xl:mb-[660px]"
           >
-            <h2 class="h2 text-white flex-1 mb-4 text-center xl:text-left">
+            <h2 class="h2 text-white flex-1 mb-4 text-center">
               Our best services for your solution
             </h2>
             <p
@@ -318,7 +318,7 @@
       </div>
 
       <div class="container mx-auto mt-8 xl:-mt-[144px]">
-        <div class="grid xl:grid-cols-4 gap-5 px-8 xl:px-0">
+        <div class="grid xl:grid-cols-4 lg:grid-cols-2 gap-5 px-8 xl:px-0">
           <article
             class="services__item bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center"
           >
@@ -390,9 +390,7 @@
     <!-- Appointment Section Start -->
     <section class="appointment section">
       <div class="container mx-auto">
-        <h2
-          class="appointment__title h2 mb-5 xl:mb-[50px] text-center xl:text-left"
-        >
+        <h2 class="appointment__title h2 mb-5 xl:mb-[50px] text-center">
           Book Appointment or call:
           <span class="text-accent-tertiary">(+62) 81122334455</span>
         </h2>
@@ -551,11 +549,9 @@
     <!-- Testimonials Section End -->
 
     <!-- Team Section Start -->
-    <section class="team section">
+    <section class="team section" id="doctors">
       <div class="container mx-auto">
-        <h2 class="team__title h2 mb-[50px] text-center xl:text-left">
-          Our Team
-        </h2>
+        <h2 class="team__title h2 mb-[50px] text-center">Our Team</h2>
         <div class="team__slider swiper min-h-[400px]">
           <!-- Slider main container -->
           <div class="swiper-wrapper">
@@ -889,9 +885,9 @@
     <!-- FAQ Section End -->
 
     <!-- Departments Section Start -->
-    <section class="departments section">
+    <section class="departments section" id="departments">
       <div
-        class="departments__bg bg-departments bg-cover lg:bg-auto bg-center bg-no-repeat max-w-[1466px] mx-4 lg:mx-auto rounded-[20px] px-6 lg:px-0 py-12 lg:pt-[80px] lg:pb-[90px] relative min-h-[588px] flex items-center"
+        class="departments__bg bg-departments bg-cover lg:bg-auto bg-center bg-no-repeat lg:max-w-[1150px] xl:max-w-[1466px] mx-4 lg:mx-auto rounded-[20px] px-6 lg:px-0 py-12 lg:pt-[80px] lg:pb-[90px] relative min-h-[588px] flex items-center"
       >
         <div class="departments__container container mx-auto">
           <div class="flex flex-col lg:flex-row gap-x-5">
@@ -953,11 +949,9 @@
     <!-- Departments Section End -->
 
     <!-- Blog Section Start -->
-    <section class="blog">
+    <section class="blog" id="blog">
       <div class="container mx-auto">
-        <h2 class="blog__title h2 mb-[50px] text-center xl:text-left">
-          Our Recents Posts
-        </h2>
+        <h2 class="blog__title h2 mb-[50px] text-center">Our Recents Posts</h2>
 
         <div
           class="flex flex-col lg:flex-row gap-y-6 lg:gap-y-0 items-center lg:justify-between lg:gap-x-10 xl:gap-x-0 mb-[50px]"
@@ -1065,9 +1059,7 @@
     <!-- Brand Section Start -->
     <section class="brand section">
       <div class="container mx-auto">
-        <h2 class="brand__title h2 text-center xl:text-left mb-[50px]">
-          Brands
-        </h2>
+        <h2 class="brand__title h2 text-center mb-[50px]">Brands</h2>
         <div
           class="flex flex-col lg:flex-row gap-y-12 lg:gap-y-0 justify-between items-center"
         >
@@ -1084,6 +1076,7 @@
     <!-- Newsletter Section Start -->
     <section
       class="newsletter bg-accent md:h-[444px] py-12 flex items-center relative overflow-hidden"
+      id="contact"
     >
       <div class="absolute left-0 bottom-0">
         <img src="assets/img/newsletter/pattern.svg" alt="" />
